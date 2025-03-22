@@ -1,3 +1,2 @@
-# localrank
-
-Created automatically via Python + GitHub API for Cloudflare Pages.
+# CF Pages Site
+Created automatically by Celery tasks.
