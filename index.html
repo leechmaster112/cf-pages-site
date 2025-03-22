@@ -1,212 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Sunshine Cafe - Local Coffee Shop</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LocalRank - Local Business Ranking Solution</title>
     <style>
-        :root {
-            --primary: #4a6cf7;
-            --secondary: #f6821f;
-            --dark: #333;
-            --light: #f9f9f9;
-            --gray: #666;
-        }
-        
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
-            padding: 0;
-            color: var(--dark);
-            background-color: #f5f7ff;
-        }
-        
-        header {
-            background-color: var(--primary);
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        
-        .logo {
-            font-size: 2rem;
-            font-weight: bold;
-            margin: 0;
-        }
-        
-        .tagline {
-            font-style: italic;
-            margin-top: 0.5rem;
-        }
-        
-        .container {
+            padding: 20px;
             max-width: 1200px;
             margin: 0 auto;
+            color: #333;
+        }
+        .content {
+            background: #fff;
             padding: 2rem;
-        }
-        
-        .hero {
-            background-color: white;
-            border-radius: 10px;
-            padding: 3rem 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             margin-bottom: 2rem;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
-        
-        h1 {
-            color: var(--primary);
-            font-size: 2.5rem;
+        h1 { 
+            color: #2c5282; 
             margin-bottom: 1rem;
         }
-        
-        h2 {
-            color: var(--secondary);
-            font-size: 1.8rem;
-            margin-top: 2rem;
-        }
-        
-        .features {
+        .contact-info {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-            margin: 3rem 0;
+            margin-bottom: 2rem;
         }
-        
-        .feature-card {
-            background-color: white;
-            border-radius: 8px;
-            padding: 1.5rem;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease;
+        .map-container {
+            width: 100%;
+            height: 400px;
+            margin: 2rem 0;
         }
-        
-        .feature-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .feature-icon {
-            font-size: 2.5rem;
-            color: var(--primary);
-            margin-bottom: 1rem;
-        }
-        
-        .cta {
-            background-color: var(--secondary);
-            color: white;
-            border: none;
-            padding: 1rem 2rem;
-            font-size: 1.1rem;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
+        .social-links {
+            display: flex;
+            gap: 1rem;
             margin-top: 1rem;
         }
-        
-        .cta:hover {
-            background-color: #e57200;
-        }
-        
-        footer {
-            background-color: var(--dark);
-            color: white;
-            text-align: center;
-            padding: 2rem 0;
-            margin-top: 3rem;
-        }
-        
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin: 1rem 0;
-        }
-        
-        .footer-links a {
-            color: white;
+        .social-links a {
+            color: #2c5282;
             text-decoration: none;
         }
-        
-        .footer-links a:hover {
+        .social-links a:hover {
             text-decoration: underline;
         }
     </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CafeOrCoffeeShop",
+        "name": "Sunshine Cafe",
+        "image": "",
+        "description": "Sunshine Cafe is a cozy neighborhood coffee shop serving artisanal coffee, fresh pastries, and light meals. Our warm atmosphere and friendly staff make it the perfect spot to relax, work, or meet with friends.",
+        "url": "https://sunshinecafe.example.com",
+        "telephone": "(555) 234-5678",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "321 Maple Road",
+            "addressLocality": "San Francisco",
+            "addressRegion": "CA",
+            "postalCode": "94105",
+            "addressCountry": "USA"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "37.7749",
+            "longitude": "-122.4194"
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "06:00",
+            "closes": "20:00"
+        },
+        "sameAs": [
+            "https://facebook.com/sunshinecafe",
+            "https://twitter.com/sunshinecafe",
+            "https://instagram.com/sunshinecafe"
+        ]
+    }
+    </script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">LocalRank</div>
-            <div class="tagline">Boost Your Local Business Visibility</div>
-        </div>
-    </header>
-    
-    <div class="container">
-        <section class="hero">
-            <h1>Dominate Local Search Results</h1>
-            <p>LocalRank helps small businesses improve their visibility in local search results, driving more customers to your door.</p>
-            <button class="cta">Get Started Today</button>
-        </section>
+    <div class="content">
+        <h1>Sunshine Cafe</h1>
         
-        <h2>Why Choose LocalRank?</h2>
-        <div class="features">
-            <div class="feature-card">
-                <div class="feature-icon">📈</div>
-                <h3>Improved Rankings</h3>
-                <p>Our proven strategies help your business climb to the top of local search results, making you more visible to potential customers.</p>
+        <div class="contact-info">
+            <div>
+                <h2>Contact Information</h2>
+                <p><strong>Address:</strong><br>
+                321 Maple Road<br>
+                San Francisco, CA 94105<br>
+                USA</p>
+                
+                <p><strong>Phone:</strong> <a href="tel:+15552345678" rel="nofollow">(555) 234-5678</a></p>
+                
+                <p><strong>Website:</strong> <a href="https://sunshinecafe.example.com" rel="follow">sunshinecafe.example.com</a></p>
+                
+                <h3>Business Hours</h3>
+                <p>Mo-Su 06:00-20:00</p>
+                
+                <div class="social-links">
+                    <a href="https://facebook.com/sunshinecafe" rel="nofollow">Facebook</a>
+                    <a href="https://twitter.com/sunshinecafe" rel="nofollow">Twitter</a>
+                    <a href="https://instagram.com/sunshinecafe" rel="nofollow">Instagram</a>
+                </div>
             </div>
             
-            <div class="feature-card">
-                <div class="feature-icon">📱</div>
-                <h3>Mobile Optimization</h3>
-                <p>We ensure your business looks great and performs well on all devices, especially mobile where most local searches happen.</p>
-            </div>
-            
-            <div class="feature-card">
-                <div class="feature-icon">📍</div>
-                <h3>Google Maps Integration</h3>
-                <p>Get your business properly listed and optimized on Google Maps to drive foot traffic to your location.</p>
+            <div>
+                <h2>About Us</h2>
+                <p>Sunshine Cafe is a cozy neighborhood coffee shop serving artisanal coffee, fresh pastries, and light meals. Our warm atmosphere and friendly staff make it the perfect spot to relax, work, or meet with friends.</p>
             </div>
         </div>
-        
-        <div class="features">
-            <div class="feature-card">
-                <div class="feature-icon">⭐</div>
-                <h3>Review Management</h3>
-                <p>Build and manage your online reputation with our review solicitation and management tools.</p>
-            </div>
-            
-            <div class="feature-card">
-                <div class="feature-icon">📊</div>
-                <h3>Analytics & Reporting</h3>
-                <p>Track your progress with detailed analytics and regular reports showing your ranking improvements.</p>
-            </div>
-            
-            <div class="feature-card">
-                <div class="feature-icon">🔍</div>
-                <h3>Local SEO Expertise</h3>
-                <p>Our team specializes in local search optimization, staying up-to-date with the latest algorithm changes.</p>
-            </div>
+
+        <div class="map-container">
+            <iframe
+                width="100%"
+                height="100%"
+                style="border:0"
+                loading="lazy"
+                allowfullscreen
+                src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=321+Maple+Road,San+Francisco,CA+94105">
+            </iframe>
         </div>
-        
-        <section class="hero">
-            <h2>Ready to Grow Your Local Business?</h2>
-            <p>Join thousands of businesses that have improved their local search rankings with LocalRank.</p>
-            <button class="cta">Contact Us Now</button>
-        </section>
     </div>
-    
-    <footer>
-        <div class="container">
-            <div class="footer-links">
-                <a href="#">About Us</a>
-                <a href="#">Services</a>
-                <a href="#">Case Studies</a>
-                <a href="#">Contact</a>
-                <a href="#">Privacy Policy</a>
-            </div>
-            <p>&copy; 2024 LocalRank. All rights reserved.</p>
-        </div>
-    </footer>
 </body>
-</html> 
+</html>
